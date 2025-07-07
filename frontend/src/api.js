@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'https://job-tracker-backend-0vm1.onrender.com',
+  baseURL: process.env.REACT_APP_API_URL,
 });
 
 // Attach JWT token to every request
